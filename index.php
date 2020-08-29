@@ -1,62 +1,43 @@
 <?php
 
-include 'header.php';
+include 'includes/header.php';
 
 
 ?>
 
-
-<div id="about" class="container-fluid">
-  <div class="row justify-content-center bg-dark text-white">
-    <div class="row align-items-center col-12 col-md-6 col-lg-8 order-1 md-order-0">
-      <div class="col-12 col-lg-6">
-        <h1 id="about-me-title" class="text-center text-md-left mt-4 mt-md-0">Hi, I'am <span class="text-success">Tuncay</span></h1>
-        <p id="about-me-sub" class="text-center text-md-left text-info">Web Developer | Software Developer</p>
-      </div>
-      <div class="col-12 col-lg-6">
-        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div id="about-me" class="container-fluid">
+  <div id="me" class="row">
+    <div id="my-infos" class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 order-1 order-sm-1 order-md-0 order-lg-0 order-xl-0">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active my-infos-text">
+            <p>Hi, my name is Tuncay Basak. I am a full-stack web developer from Belfort, France.</p>
+          </div>
+          <div class="carousel-item my-infos-text">
+            <p>Coding was always one of my favorite hobbies. I am also very attracted to learn about all kind of new technologies.</p>
+          </div>
+          <div class="carousel-item my-infos-text">
+            <p>I have a diverse set of skills, ranging from design, HTML/CSS/JS, all the way to PHP and java.</p>
+          </div>
+          <div class="carousel-item my-infos-text">
+            <p>I have already built a cloud based file explorer and developed a multiplayer web games. You can check at my projects.</p>
+          </div>
+          <div class="carousel-item my-infos-text">
+            <p>Don't hesitate to take a look to my gitHub profile. I have a lot of repository where i try to do some coding challenge. </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-10 col-sm-8 col-md-6 col-lg-4 order-0 order-md-1 mt-4">
-      <img class="img-fluid" src="src/img/no-bg-profile.png" alt="photo">
+    <div class="col-8 col-sm-6 col-md-4 col-lg-4 col-xl-4 ml-auto mr-auto mt-2 mb-2 order-0 order-sm-0 order-md-1 order-lg-1 order-xl-1">
+      <img id="photo-mobile" class="rounded-circle d-inline-block d-sm-inline-block d-md-none d-lg-none d-xl-none" src="src/img/linkedin.png" alt="photo-mobile">
+      <img id="photo-pc" class="d-none d-sm-none d-md-inline-block d-lg-inline-block d-xlinline-block" src="src/img/no-bg-profile.png" alt="photo-pc">
     </div>
   </div>
-</div>
-<div id="projects" class="container-fluid pl-0 pr-0 pt-5 pb-5 overflow-hidden bg-success">
-  <h1 class="text-center mb-5">My Projects</h1>
-  <div class="row justify-content-center">
-  <?php
-  include 'getProjectViews.php';
-   ?>
-   </div>
-</div>
 
-<div id="contacts" class="container-fluid bg-secondary pt-5 pb-5">
-  <h1 class="text-center">Contact Me</h1>
-  <div class="container">
-    <form class="" action="contact.php" method="post">
-      <div class="row justify-content-around w-75 ml-auto mr-auto">
-        <input class="col-10 col-md-6 mb-2" type="text" name="name" placeholder="Your name" required="required">
-        <input class="col-10 col-md-6 mb-2" type="text" name="email" placeholder="Your email" required="required">
-        <textarea class="col-12" name="message" rows="6" cols="80" placeholder="Your message" required="required"></textarea>
-        <input class="col-3 ml-auto mr-auto" type="submit" name="submit" value="Send">
-      </div>
-    </form>
-  </div>
 </div>
-
-<div class="container-fluid bg-info pt-5 pb-2">
-  <div class="row">
-    <div class="offset-9 col-3">
-      <form action="admin.php" method="post">
-        <button class="btn btn-secondary" type="submit" name="cms-button">CMS</button>
-      </form>
-    </div>
-  </div>
-</div>
-
 
 
 <?php
 
-include 'footer.php';
+
+include 'includes/footer.php';
